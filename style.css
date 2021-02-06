@@ -12,12 +12,23 @@ body {
   height: 100%;
 }
 .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-image: linear-gradient(
     to bottom,
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
+  z-index: -1;
+}
+/* FAQ Background Style */
+.FAQmain{
+  display: block;
+  width: 70%;
+  height: 60% ;
+  background-color: white;
 }
 /* Questions (Buttons) Style */
 .question {
