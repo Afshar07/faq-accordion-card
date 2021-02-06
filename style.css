@@ -29,11 +29,17 @@ body {
   width: 70%;
   height: 60% ;
   background-color: white;
+  border-radius: 30px;
+  padding: 1%;
 }
 /* Questions (Buttons) Style */
 .question {
+  width: 100%;
   background-color: transparent;
   border: none;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
