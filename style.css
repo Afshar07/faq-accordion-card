@@ -25,12 +25,14 @@ body {
 }
 /* FAQ Background Style */
 .FAQmain{
-  display: block;
+  display: grid;
   width: 70%;
-  height: 60% ;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
   background-color: white;
   border-radius: 30px;
-  padding: 1%;
+  padding: 1rem;
 }
 /* Questions (Buttons) Style */
 .question {
@@ -42,4 +44,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.right{
+order: 2;
+}
+.left{
+order: 1;
 }
