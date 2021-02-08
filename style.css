@@ -32,25 +32,28 @@ body {
   grid-column-gap: 1em;
   background-color: white;
   border-radius: 30px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 /* Questions (Buttons) Style */
 .question {
   width: 95%;
   background-color: transparent;
   border: none;
-  padding: .5rem;
+  padding: .8rem;
   border-bottom: 1px solid gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   outline: none;
+/* transition: all .3s; */
 }
 
 /* Hiding Answers */
 .answer{
   display: none;
+  padding-left: .5rem;
+  padding-top: 0;
   overflow: hidden;
   transition: all .5s;
 }
@@ -74,10 +77,22 @@ order: 1;
 /* Active state */
 .active{
   font-weight: bolder;
-  transition: all .2s;
+  transition: all .3s;
+  border: none;
+  padding-top: 1.3rem;
+  padding-bottom: .3rem !important;
 }
 .active::after{
   content: url(images/icon-arrow-down.svg);
   transform: scaleY(-1);
+  transition: all .3s;
+}
+.show{
+  display: block;
+  border-bottom: 1px solid gray;
+  transition: all .3s;
+}
+.hide{
+  display: none;
   transition: all .3s;
 }
