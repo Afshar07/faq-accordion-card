@@ -21,7 +21,6 @@ body {
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
-  z-index: -1;
 }
 /* FAQ Background Style */
 .FAQmain{
@@ -44,10 +43,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  outline: none;
 }
 .right{
 order: 2;
 }
 .left{
 order: 1;
+}
+
+/* Adding Arrows to question */
+.question::after{
+  content: url(images/icon-arrow-down.svg);
+}
+
+
+
+/* Active state */
+.active{
+  font-weight: bolder;
+}
+.active::after{
+  content: url(images/icon-arrow-down.svg);
+  transform: scaleY(-1);
 }
