@@ -46,6 +46,15 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+/* Hiding Answers */
+.answer{
+  display: none;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+/* Grid System */
 .right{
 order: 2;
 }
@@ -56,6 +65,7 @@ order: 1;
 /* Adding Arrows to question */
 .question::after{
   content: url(images/icon-arrow-down.svg);
+  transition: all .3s;
 }
 
 
@@ -67,4 +77,5 @@ order: 1;
 .active::after{
   content: url(images/icon-arrow-down.svg);
   transform: scaleY(-1);
+  transition: all .3s;
 }
