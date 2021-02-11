@@ -55,7 +55,8 @@ body {
   padding-left: .5rem;
   padding-top: 0;
   overflow: hidden;
-  transition: all .5s;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
 /* Grid System */
